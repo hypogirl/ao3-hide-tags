@@ -1,0 +1,19 @@
+body {
+    background-color: #333;
+    color: #e6e6e6;
+    width: 350px;
+    height: 235px;
+}
+
+dd, ul, li {
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

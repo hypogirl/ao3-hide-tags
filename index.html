@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block AO3 Tags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <dd>
+        <ul>
+            <li>
+                <input class="warning" type="checkbox" name="work_search[archive_warning_ids][]" id="warning_19" value="Rape/Non-Con">
+                <label for="warning_19">Rape/Non-Con</label>
+            </li>
+            <li>
+                <input class="warning" type="checkbox" name="work_search[archive_warning_ids][]" id="warning_20" value="Underage">
+                <label for="warning_20">Underage</label>
+            </li>
+        </ul>
+    </dd>
+    <p></p>
+    <form>
+        <label for="user">Custom tag</label><br>
+        <input type="text" id="tag" name="tag">
+        <button type="button" id="addtag">Add tag</button>
+        <button type="button" id="removetag">Remove tag</button>
+    </form>
+    <p></p>
+    <div style="font-size: small;"><b>Currently blocked tags: </b><div id="blockedtags"></div></div>
+    <p></p>
+    <button type="button" id="block"><h5>Remove fanfics</h5></button>
+    <p></p>
+    <div id="count"></div>
+    <script src="script.js"></script>
+</body>
+</html>

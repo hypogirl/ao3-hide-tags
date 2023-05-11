@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Block AO3 Tags",
+    "description": "Blocks certain selected AO3 tags",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs",
+        "cookies"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "matches": ["https://archiveofourown.org/works/search?*"],
+            "js": ["block.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "action": {
+        "default_popup": "index.html"
+    }
+}
